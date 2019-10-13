@@ -1,0 +1,25 @@
+
+<h2>List of Products</h2>
+
+<div *ngFor="let product of products" style="border:1px green solid">
+
+ 
+    <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.serial">
+    Serial No: {{ product.serial }}
+  </p>
+  
+  <button (click)="Price()">
+    Get Price
+  </button>
+ 
+ 
+       <product-list-alert  > </product-list-alert>  
+       
+
+</div>
