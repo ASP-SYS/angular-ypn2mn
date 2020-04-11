@@ -34,8 +34,8 @@ export class ProductListComponent implements OnInit {
    
   }
 
-    Price() {
-    window.alert('The product has been shared!');
+    Price(price) {
+    window.alert('The product has been shared!'+price);
   }
 
 }
