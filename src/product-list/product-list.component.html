@@ -14,12 +14,10 @@
     Serial No: {{ product.serial }}
   </p>
   
-  <button (click)="Price(prduct.Price)">
+    <product-list-alert  [Product]="product" (getdetail) ="getalert()"> </product-list-alert>  
+  <button (click)="Price(product.price)">
     Get Price
   </button>
  
- 
-       <product-list-alert  > </product-list-alert>  
-       
 
 </div>

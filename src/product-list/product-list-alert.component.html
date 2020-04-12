@@ -1,6 +1,7 @@
 <div >
-  <p>
-  <button>Notify Me</button>
+  <p *ngIf="Product.price>200">
+  <button (click)="getdetail.emit()">Get Detail 
+    </button>
 </p>
  
 </div>
